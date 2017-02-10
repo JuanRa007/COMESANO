@@ -1,0 +1,25 @@
+/*
+// ************************************
+//  JuanRa's Game: "Comer Sano"
+//  Funciones principales
+//  Jerez, a 01 de Febrero de 2017
+// ************************************
+//  Todos los derechos reservados
+// ************************************
+*/
+
+@import url('https://fonts.googleapis.com/css?family=Pangolin&subset=latin-ext');
+@import url('https://fonts.googleapis.com/css?family=Revalia&subset=latin-ext');
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.grad1 {
+  background: #0fb8ad;
+  background: -webkit-linear-gradient(141deg, #0fb8ad 0%, #1fc8db 51%, #2cb5e8 75%);
+  background: -o-linear-gradient(141deg, #0fb8ad 0%, #1fc8db 51%, #2cb5e8 75%);
+  background: -moz-linear-gradient(141deg, #0fb8ad 0%, #1fc8db 51%, #2cb5e8 75%);
+  background: linear-gradient(141deg, #0fb8ad 0%, #1fc8db 51%, #2cb5e8 75%);
+}

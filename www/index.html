@@ -1,0 +1,65 @@
+<!--
+// ************************************
+//  JuanRa's Game: "Comer Sano"
+//  Funciones principales
+//  Jerez, a 01 de Febrero de 2017
+// ************************************
+//  Todos los derechos reservados
+// ************************************
+-->
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+    <link rel="shortcut icon" href="favicon.png" type="image/x-icon" />
+    <link rel="stylesheet" type="text/css" href="css/juego.css" />
+    <title>Come Sano!!</title>
+  </head class="grad1">
+  <body>
+
+    <div id='mijuego'></div>
+
+    <script type="text/javascript" src="cordova.js"></script>
+    <script type="text/javascript" src="js/phaser.min.js"></script>
+    <!--
+    // ************************************
+    //  JuanRa's Game: "Comer Sano"
+    //  Funciones principales
+    //  Jerez, a 01 de Febrero de 2017
+    // ************************************
+    //  Todos los derechos reservados
+    // ************************************
+
+    El juego se compone de varios 'estados' los cuales he separado en distintos ficheros para su claridad.
+    Cada estado del juego le corresponde un fichero con la extensión ".js":
+    - arranca:   Se encarga de preparar el juego y la inclinación del disposotivo, ya que se recomienda su uso
+                 en modo vertical, aunque puede jugarse en horizontal, pero el juego está pensado para un modo
+                 vertical.
+                 También aquí se define un evento para que cuando se gire el dispositivo y se posicione en modo
+                 horizontal avise con un mensaje de advertencia al jugador.
+    - precarga:  Se realiza la carga de las imágenes del juego y se muestra una pequeña barra de progreso.
+    - presenta:  Una pequeña pantalla de presentación previa al juego. Al pulsar el el botón correspondiente,
+                 el juego avanza al siguiente estado, a saber, al juego en sí.
+    - ayuda:     Se explica el uso del juego y el significado de cada icono.
+    - eljuego:   Como su nombre indica es donde están definidas toda la funcionalidad del juego.
+                 El juego consiste en ir recogiendo toda la comida sana que veas (frutas) las cuales te darán
+                 puntos, pero si recoges mala comida (comida rápida), hará que tu suelo se vaya elevando, y si
+                 llegas hasta el techo serrado, el juego concluirá.
+                 Hay un icono especial, 'Comunicados' que te dará más puntos y te alejará del techo serrado.
+    - elfinal:   Cuando concluye el juego porque has llegado hasta el techo serrado, y tras un breve momento,
+                 se presentará esta pantalla donde se informa de la putuación obtenida.
+                 Si pulsamos sobre el botón que se muestra, podremos volver a jugar, pasando al estado de
+                 presentación.
+    - mijuego:   Se definen las variables principales del juego así como los distintos estados del mismo.
+ -->
+    <script type="text/javascript" src="js/arranca.js"></script>
+    <script type="text/javascript" src="js/precarga.js"></script>
+    <script type="text/javascript" src="js/presenta.js"></script>
+    <script type="text/javascript" src="js/ayuda.js"></script>
+    <script type="text/javascript" src="js/eljuego.js"></script>
+    <script type="text/javascript" src="js/elfinal.js"></script>
+    <script type="text/javascript" src="js/mijuego.js"></script>
+  </body>
+</html>
