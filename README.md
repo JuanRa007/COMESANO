@@ -15,7 +15,7 @@
 
   Captura del juego:
 
-  ![Imagen del juego](screenshots\captura.png)
+  ![Imagen del juego](screenshots/captura.png)
 
 ### Paquete creado.
 
