@@ -54,8 +54,6 @@ presenta.prototype = {
     etiayuda.setShadow(5, 5, 'rgba(0,0,0,0.5)', 15);
     etiayuda.events.onInputUp.add(this.vamosAyuda);
     // Añadimos un botón para ir al juego y la función a la que irá.
-    //var decora2 = this.game.add.graphics();
-    //decora2.beginFill(0xCC00FF, 0.5);
     decora1.drawRoundedRect(this.game.world.centerX - 140, alto - 150, 40 * 7, 90);
     decora1.anchor.setTo(0.5);
     etiajugar = this.game.add.text(this.game.world.centerX, alto - 100, 'A Jugar', estBoton);

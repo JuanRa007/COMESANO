@@ -65,6 +65,7 @@ var posjugador = alto - 32;
 var final = Math.floor(60*alto/100);
 var pixdecre = 10;
 var niveles = 1;
+var maxpuntuacion = 0;
 
 // Sonidos.
 var sonfruta;
@@ -78,6 +79,7 @@ var estNormal   = { font: 'bold 48px Pangolin', fill: '#fff', boundsAlignH: 'cen
 var estBoton    = { font: 'bold 36px Revalia', fill: '#eee', boundsAlignH: 'center', boundsAlignV: 'middle' };
 var estAyuda    = { font: '28px Revalia', fill: '#eee', boundsAlignH: 'left', boundsAlignV: 'middle' };
 var estPuntua   = { font: '28px Revalia', fill: '#a80703', align: 'center'};
+var estPuntuaR   = { font: '28px Revalia', fill: '#a80703', align: 'center', strokeThickness:5};
 var estMarcador = { font: '24px Revalia', fill: '#000' };
 var estPausar   = { font: '24px Revalia', fill: '#ddd', strokeThickness:5 };
 

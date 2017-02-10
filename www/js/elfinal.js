@@ -38,7 +38,13 @@ elfinal.prototype = {
     titulo.setTextBounds(0, centroY, ancho, 200);
 
     // Pintamos la puntuación obtenida.
-    titpuntua = this.game.add.text(centroX, centroY + 240, LIT_PUNTUACION + puntuacion, estPuntua);
+    if (puntuacion > maxpuntuacion) {
+      titpuntua = this.game.add.text(centroX, centroY + 240, LIT_PUNTUACION + puntuacion + '\n\nMáx.Puntuación: ' + maxpuntuacion, estPuntuaR);
+      maxpuntuacion = puntuacion;
+    }
+    else {
+      titpuntua = this.game.add.text(centroX, centroY + 240, LIT_PUNTUACION + puntuacion + '/' + maxpuntuacion, estPuntua);
+    }
     titpuntua.anchor.setTo(0.5);
 
     // Añadimos un botón para volver a la pantalla principal.
